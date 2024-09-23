@@ -33,16 +33,16 @@ if nombre_usuario:
     else:
         # Lista de nombres
         nombres = [
-            "Josemari", "Dani Garra", "Ivan Morcilla", "Pino Culito Húmedo", "Edu", 
-            "Juani", "Inma Phoebe", "Mari Angeles", "Ely", "Ternero", 
-            "Juanmi", "Raúl", "Quique", "Miguel Ten"
+            "Josemari", "Dani", "Ivan", "Pino", "Edu", "Alberto", 
+            "Juani", "Inma", "Mari Angeles", "Ely", "Ternero", 
+            "Juanmi", "Raúl", "Quique", "Miguel Ten", "Roberto", "Mario", "Jorge"
         ]
 
         # Lista de categorías
         categorias = [
-            "", "El + pelota", "El + morcillón", "El + despistado", "El + empollón", "El + cabeza",
-            "El + charlatán", "El + cabrón", "El + seco", "El + escaqueado", "El + empanado", 
-            "El + chulo", "La + vieja", "El + abuelo", "El + flamenco"
+            "", "El/La + pelota", "El/La + morcillón/a", "El/La + despistado/a", "El/La + empollón/a", "El/La + cabezón/a",
+            "El/La + charlatán/a", "El/La + cabrón/a", "El/La + seco/a", "El/La + escaqueado/a", "El/La + empanado/a", 
+            "El/La + chulo/a", "El/La + viejo/a", "El/La + abuelo/a", "El/La + flamenco/a", "El/La + pasota", "El/La + desaparecido/a"
         ]
 
         # Diccionario para guardar los emparejamientos actuales
