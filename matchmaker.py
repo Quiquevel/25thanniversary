@@ -9,8 +9,6 @@ contraseña_correcta = "manolosalido"
 # Crear la conexión a la base de datos SQLite
 conn = sqlite3.connect('votos.db')
 c = conn.cursor()
-# Agregar la columna 'votante' si no existe
-c.execute("ALTER TABLE emparejamientos ADD COLUMN votante TEXT")
 
 # Crear la tabla de votantes si no existe
 c.execute('''CREATE TABLE IF NOT EXISTS votantes (
@@ -19,7 +17,7 @@ c.execute('''CREATE TABLE IF NOT EXISTS votantes (
 # Crear la tabla de emparejamientos si no existe
 c.execute('''CREATE TABLE IF NOT EXISTS emparejamientos (
                 nombre TEXT,
-                categoria TEXT)''')
+                categoria TEXT, votante TEXT)''')
 
 conn.commit()
 
