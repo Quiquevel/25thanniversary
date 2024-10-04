@@ -86,24 +86,5 @@ if nombre_usuario:
     # Convertir resultados a DataFrame y mostrar en tabla
     df_resultados = pd.DataFrame(resultados, columns=["Categoría", "Persona con más votos", "Votos"])
     st.table(df_resultados)
-
-    '''st.subheader("Votos por usuario")
-    contraseña_ingresada = st.text_input("Introduce la contraseña para ver los votos:", type="password")
-
-    if contraseña_ingresada:
-        # Hashear la contraseña ingresada para comparar de forma segura
-        contraseña_ingresada_hash = hashlib.sha256(contraseña_ingresada.encode()).hexdigest()
-        contraseña_correcta_hash = hashlib.sha256(contraseña_correcta.encode()).hexdigest()
-
-        if contraseña_ingresada_hash == contraseña_correcta_hash:
-            c.execute("SELECT votante, nombre, categoria FROM emparejamientos")
-            votos_usuario = c.fetchall()
-            df_votos_usuario = pd.DataFrame(votos_usuario, columns=["Votante", "Nombre", "Categoría"])
-            st.table(df_votos_usuario)
-        else:
-            st.warning("Contraseña incorrecta.")
-    else:
-        st.info("Ingresa la contraseña para ver los votos de cada usuario.")
-'''
 else:
     st.warning("Por favor, introduce tu nombre para continuar.")
