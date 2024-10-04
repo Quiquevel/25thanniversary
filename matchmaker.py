@@ -87,7 +87,7 @@ if nombre_usuario:
     df_resultados = pd.DataFrame(resultados, columns=["Categoría", "Persona con más votos", "Votos"])
     st.table(df_resultados)
 
-    st.subheader("Votos por usuario")
+    '''st.subheader("Votos por usuario")
     contraseña_ingresada = st.text_input("Introduce la contraseña para ver los votos:", type="password")
 
     if contraseña_ingresada:
@@ -104,6 +104,6 @@ if nombre_usuario:
             st.warning("Contraseña incorrecta.")
     else:
         st.info("Ingresa la contraseña para ver los votos de cada usuario.")
-
+'''
 else:
     st.warning("Por favor, introduce tu nombre para continuar.")
