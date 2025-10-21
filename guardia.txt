@@ -1,0 +1,90 @@
+Tenemos que ver, como hacer la transición al equipo del Pool del N1, los recursos estos nos los vamos a quedar nosotros lo que duren y Primi que se apañe (eso me dicen mis mayores).
+
+En la fase 1, meteremos de guardia a quien nos diga Primi, a hacer las tareas de SRE1 y dejamos a quien estuviera de SRE1 más otro y los chicos nuevos y el SRE2 (la guardia por la tarde noche) como hasta ahora, al que le toque.
+
+Te explico cómo lo vamos a hacer:
+ 
+🧭 Modelo de transición – Híbrido (Progresivo + Mentoring)
+El modelo combina control progresivo, acompañamiento y transferencia efectiva de conocimiento, permitiendo que el Pool gane autonomía sin comprometer la calidad operativa.
+
+🕓 Fase 0 – Periodo de observación y reporte (2 semanas)
+📆 Fechas: del 20 de octubre al 2 de noviembre de 2025
+Objetivo: Familiarizar al Pool con la operativa real y el flujo de alertas antes de asumir carga directa.
+Configuración:
+	• Soporte diurno N1: SRE (100 %)
+	• Soporte nocturno N1: SRE (100 %)
+	• Pool DevOps: Receptor de información y observador activo
+Dinámica:
+	• Envío diario de reporte de llamadas a guardia a Primi y Ángel Albarracín (08:00 CET) en formato tabla estándar (Tipo / Descripción / Asignado por / Nº llamadas / Estado – Acción táctica).
+	• Pool analiza las tendencias y envía feedback a SRE sobre casuísticas recurrentes.
+	• SRE mantiene responsabilidad operativa total y recoge incidencias para mentoring posterior.
+📈 Objetivo de la fase: transferir conocimiento del comportamiento real de guardia, detectar patrones de alertas y establecer KPIs base (MTTD, MTTR, volumen diario).
+
+🧩 Fase 1 – Inicial (≈ 2 semanas)
+📆 Inicio: 3 de noviembre de 2025  | Duración: 2 semanas
+Configuración:
+	• Soporte diurno N1: Pool + 2 recursos SRE como mentores operativos
+	• Soporte nocturno N1: SRE
+	• Pool: participa activamente en resolución bajo supervisión
+Objetivo: formar al Pool en procedimientos, herramientas y resolución de incidencias reales.
+Seguimiento: reunión de sincronización SRE–Pool cada 48 h y envío de reporte diario.
+
+⚙️ Fase 2 – Madurez (≈ 2 semanas)
+📆 Prevista: 17 – 30 de noviembre 2025
+Configuración:
+	• Soporte diurno N1: Pool + mentores SRE
+	• Soporte nocturno N1: Pool
+	• Soporte 24×7 N2: SRE
+Objetivo: completar formación operativa y validar autonomía del Pool en turnos nocturnos.
+
+🧱 Fase 3 – Final (Go Live N1 Pool)
+📆 Prevista: a partir del 1 de diciembre de 2025
+Configuración:
+	• N1 (24×7): Pool
+	• N2: DevOps Dedicados / Federados
+	• N3 (24×7): SRE
+Objetivo: transferencia completa de responsabilidades N1, SRE enfocado en soporte crítico y mejora continua.
+Checkpoint: revisión de KPIs tras 30 días de operación y validación de rendimiento del Pool.
+
+📆 Hito clave
+📅 3 de noviembre 2025: Reunión SRE–Pool de inicio de Fase 1 – presentación de KPIs base, feedback de Fase 0 y activación oficial del modelo híbrido.
+
+
+
+
+Por poner nombres y caras:
+ 
+🕓 Fase 0 – Periodo de observación y reporte (2 semanas)
+	• SRE1 (Guardia habitual matutina + resto de tareas) + Envío de reporte 
+		○ Alejandro Iglesias
+		○ Manuel Angel Delgado
+	• SRE2 (Guardia habitual semanal) 
+		○ Enrique Velasco
+		○ Alejandro Iglesias
+🧩 Fase 1 – Inicial (≈ 2 semanas)
+	• N1 Pool (Guardia habitual matutina) 
+		○ Quien nos diga Primi
+	• SRE1 (resto de tareas no guardia) + Envío de reporte (de lo ocurrido fuera de horas) 
+		○ Quien toque en la rotación que no están puestos
+	• SRE2 (Guardia habitual semanal) 
+		○ Manuel Angel Delgado
+		○ Xavier Iglesias
+⚙️ Fase 2 – Madurez (≈ 2 semanas) -> Cambio de alertas en Dynatrace al grupo de Primi
+	• N1 Pool (Guardia habitual matutina)
+	• SRE1 (resto de tareas no guardia) + Mentoring y acompañamiento del Pool 
+		○ Quien toque en la rotación que no están puestos
+	• N1 Pool (Guardia habitual semanal)
+	• SRE2 (Guardia de escalado N2) 
+		○ Carlos Murcia
+		○ Enrique Velasco
+🧱 Fase 3 – Final (Go Live N1 Pool)
+	• N1 Pool (Guardia habitual matutina)
+	• SRE1 (resto de tareas no guardia) 
+		○ Quien toque en la rotación que no están puestos
+	• N1 Pool (Guardia habitual semanal)
+	• SRE2 (Guardia de escalado N2) 
+		○ Juan Amores
+		○ Xavier Iglesias
+ 
+Ahora mismo todo hasta el 2 de Noviembre todo sigue igual, solo que enviamos un reporte a esta gente.
+
